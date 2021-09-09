@@ -1,0 +1,99 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block content %}
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold">Du gras, oui, mais de qualité !</h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <h2 class="text-white font-weight-light">Trouvez un produit de substitution pour ceux que vous consommez
+                    tous les jours.</h2>
+            </div>
+            <div class="col-lg-8 align-self-baseline input-group">
+                <input type="text" class="form-control" placeholder="Chercher un aliment...">
+                <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<section class="page-section bg-primary" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Colette et Remy</h2>
+                <h4 class="text-white-50">De la ratatouille aux croissants...</h3>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">Pur Beurre est l'initiative de deux amoureux de la gastronomie
+                        française,
+                        Colette Tatou et Rémy, que vous avez déjà certainement rencontrés dans notre excellent
+                        restaurant
+                        Ratatouille.</p>
+                    <p class="text-white-75 mb-4"><b>Colette Tatou</b> : <i>"Nous aimons tous manger, surtout en France
+                            !
+                            Personnellement, une baguette fraîche, du bon fromage de chèvre et un bon vin rouge me
+                            suffisent
+                            amplement. Comme tout le monde, je fais mes courses au supermarché. Mais petit à petit je me
+                            suis
+                            rendue compte, surtout lorsque nous avons ouvert le restaurant, que je pouvais remplacer les
+                            produits aseptisés que j'avais l'habitude d'acheter par de bons produits du terroir Et
+                            souvent
+                            pour
+                            le même prix !"</i></p>
+                    <p class="text-white-75 mb-4"><b>Remy</b> : <i>"Pour ma part je me rendais déjà dans bien des
+                            magasins
+                            car j'aime
+                            beaucoup me balader, surtout dans les caves et les cuisines. Je connaissais par coeur le
+                            contenu
+                            des
+                            boutiques bio (dont je raffole) ainsi que les ingrédients de tous les aliments vendus.
+                            Lorsque
+                            Colette m'a demandé si elle pouvait remplacer son Nutella matinal par un aliment plus sain,
+                            je
+                            savais tout de suite où le trouver. L'idée de Pur Beurre était née !"</i></p>
+                    <div class="container-fluid row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="{% static 'img/colette.png' %}" />
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="{% static 'img/remy.png' %}" />
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0">Contactez-nous !</h2>
+                <hr class="divider" />
+                <p class="text-muted mb-5">Pour nous aider à toujours mieux répondre à vos attentes, n'hésitez pas à
+                    nous contacter.</p>
+                <div class="container-fluid row">
+                    <div class="col-md-6">
+                        <div class="mt-5">
+                            <div class="mb-2"><img src="{% static 'img/phone.png' %}">
+                            </div>
+                            <a href="tel:+33123456789" class="text-muted text-decoration-none">+33 (0) 1 23 45 67 89</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mt-5">
+                            <div class="mb-2"><img src="{% static 'img/mail.png' %}"></div>
+                            <a href="mailto:contact@purbeurre.fr"
+                                class="text-muted text-decoration-none">contact@purbeurre.fr</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

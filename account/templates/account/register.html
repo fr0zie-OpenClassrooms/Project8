@@ -1,0 +1,42 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center text-center">
+            <div class="card">
+                <div class="card-title text-center border-bottom">
+                    <h2>Créer un compte</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        <div class="input-group mb-3 justify-content-center">
+                            <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+                            {{form.username}}
+                        </div>
+                        <div class="input-group mb-3 justify-content-center">
+                            <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                            {{form.email}}
+                        </div>
+                        <div class="input-group mb-3 justify-content-center">
+                            <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                            {{form.password1}}
+                        </div>
+                        <div class="input-group mb-3 justify-content-center">
+                            <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                            {{form.password2}}
+                        </div>
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-primary">Créer un compte</button>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        Vous avez un déjà un compte ? <a href="{% url 'login' %}">Se connecter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}
