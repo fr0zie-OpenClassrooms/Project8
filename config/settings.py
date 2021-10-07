@@ -16,18 +16,20 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
+    # Local
+    "home.apps.HomeConfig",
+    "account.apps.AccountConfig",
+    "product.apps.ProductConfig",
+    # Django
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "home.apps.HomeConfig",
-    "account.apps.AccountConfig",
 ]
 
 MIDDLEWARE = [
@@ -60,21 +62,30 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
+        "ENGINE": "django.db.backends.postgresql",
         "NAME": "purbeurre",
-        "USER": "admin",
-        "PASSWORD": "12345",
+        "USER": "postgres",
+        "PASSWORD": "1813",
         "HOST": "localhost",
-        "PORT": "3306",
+        "PORT": "5432",
     }
 }
 
+# Authentication model
+
+AUTH_USER_MODEL = "account.User"
+
+# Email authentication
+
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "account.auth.EmailAuth",
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

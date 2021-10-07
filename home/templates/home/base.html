@@ -26,12 +26,19 @@
                             <input type="text" class="form-control" placeholder="Chercher...">
                         </form>
                     </div>
+                    {% if request.user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'account' %}"><img
-                                src="{% static 'img/menu/account.png' %}"></a></li>
+                                src="{% static 'img/menu/user_on.png' %}"></a></li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account' %}"><img
+                                src="{% static 'img/menu/user_off.png' %}"></a></li>
+                    {% endif %}
                     <li class="nav-item"><a class="nav-link" href="#food"><img
                                 src="{% static 'img/menu/food.png' %}"></a></li>
+                    {% if request.user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}"><img
                                 src="{% static 'img/menu/logout.png' %}"></a></li>
+                    {% endif %}
                 </ul>
             </div>
         </div>

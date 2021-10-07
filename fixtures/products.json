@@ -1,0 +1,2162 @@
+[
+    {
+        "model": "product.category",
+        "pk": 1,
+        "fields": {
+            "name": "Boissons"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 2,
+        "fields": {
+            "name": "Eaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 3,
+        "fields": {
+            "name": "Eaux de sources"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 4,
+        "fields": {
+            "name": "Eaux minérales"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 5,
+        "fields": {
+            "name": "Eaux minérales naturelles"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 6,
+        "fields": {
+            "name": "Produits à tartiner"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 7,
+        "fields": {
+            "name": "Petit-déjeuners"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 8,
+        "fields": {
+            "name": "Produits à tartiner sucrés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 9,
+        "fields": {
+            "name": "Pâtes à tartiner"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 10,
+        "fields": {
+            "name": "Pâtes à tartiner aux noisettes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 11,
+        "fields": {
+            "name": "Pâtes à tartiner au chocolat"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 12,
+        "fields": {
+            "name": "Pâtes à tartiner aux noisettes et au cacao"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 13,
+        "fields": {
+            "name": "Snacks"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 14,
+        "fields": {
+            "name": "Snacks sucrés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 15,
+        "fields": {
+            "name": "Biscuits et gâteaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 16,
+        "fields": {
+            "name": "Biscuits"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 17,
+        "fields": {
+            "name": "Aliments et boissons à base de végétaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 18,
+        "fields": {
+            "name": "Aliments d'origine végétale"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 19,
+        "fields": {
+            "name": "Céréales et pommes de terre"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 20,
+        "fields": {
+            "name": "Pains"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 21,
+        "fields": {
+            "name": "Pains de mie"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 22,
+        "fields": {
+            "name": "Pains de mie sans croûte"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 23,
+        "fields": {
+            "name": "Pains complets"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 24,
+        "fields": {
+            "name": "Pains de mie complet"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 25,
+        "fields": {
+            "name": "Viennoiseries"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 26,
+        "fields": {
+            "name": "Brioches"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 27,
+        "fields": {
+            "name": "Pains spéciaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 28,
+        "fields": {
+            "name": "Pains au lait"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 29,
+        "fields": {
+            "name": "Pains au lait natures"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 30,
+        "fields": {
+            "name": " Snacks sucrés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 31,
+        "fields": {
+            "name": " Petit-déjeuners"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 32,
+        "fields": {
+            "name": " Biscuits et gâteaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 33,
+        "fields": {
+            "name": " Biscuits"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 34,
+        "fields": {
+            "name": " Biscuits au chocolat"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 35,
+        "fields": {
+            "name": " en:Crispy biscuits"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 36,
+        "fields": {
+            "name": " Biscuit sec croquant allégé en matière grasse"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 37,
+        "fields": {
+            "name": " Biscuits secs"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 38,
+        "fields": {
+            "name": " Biscuit chocolat"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 39,
+        "fields": {
+            "name": " Biscuit sec au chocolat"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 40,
+        "fields": {
+            "name": " Biscuit sec au lait"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 41,
+        "fields": {
+            "name": " Biscuit sec pour petit déjeuner"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 42,
+        "fields": {
+            "name": " Biscuit aux céréales pour petit déjeuner enrichis en vitamines et minéraux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 43,
+        "fields": {
+            "name": " Biscuit sec pour petit déjeuner au chocolat"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 44,
+        "fields": {
+            "name": " Biscuit sec croquant au chocolat allégé en matière grasse"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 45,
+        "fields": {
+            "name": " Biscuits au chocolat au lait"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 46,
+        "fields": {
+            "name": " Aliments d'origine végétale"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 47,
+        "fields": {
+            "name": " Céréales et pommes de terre"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 48,
+        "fields": {
+            "name": " Pains"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 49,
+        "fields": {
+            "name": " Pains de mie"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 50,
+        "fields": {
+            "name": " Pains complets"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 51,
+        "fields": {
+            "name": " Pains de mie complet"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 52,
+        "fields": {
+            "name": " en:zwieback"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 53,
+        "fields": {
+            "name": " Biscottes-aux-cereales"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 54,
+        "fields": {
+            "name": " Snacks"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 55,
+        "fields": {
+            "name": " Céréales et dérivés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 56,
+        "fields": {
+            "name": " Céréales pour petit-déjeuner"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 57,
+        "fields": {
+            "name": " Matières grasses"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 58,
+        "fields": {
+            "name": " Produits à tartiner"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 59,
+        "fields": {
+            "name": " Produits à tartiner salés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 60,
+        "fields": {
+            "name": " Matières grasses à tartiner"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 61,
+        "fields": {
+            "name": " Matières grasses végétales"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 62,
+        "fields": {
+            "name": " Pâtes à tartiner végétales"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 63,
+        "fields": {
+            "name": " Margarines"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 64,
+        "fields": {
+            "name": " Margarines allégées"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 65,
+        "fields": {
+            "name": " Légumineuses et dérivés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 66,
+        "fields": {
+            "name": " Fruits à coques et dérivés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 67,
+        "fields": {
+            "name": " Purées d'oléagineux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 68,
+        "fields": {
+            "name": " Beurres de légumineuses"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 69,
+        "fields": {
+            "name": " Beurres de fruits à coques"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 70,
+        "fields": {
+            "name": " Beurres de cacahuètes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 71,
+        "fields": {
+            "name": " Desserts"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 72,
+        "fields": {
+            "name": " Cacao et dérivés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 73,
+        "fields": {
+            "name": " Chocolats"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 74,
+        "fields": {
+            "name": " Chocolats noirs"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 75,
+        "fields": {
+            "name": " Chocolat noir pâtissier en tablette à 40% de cacao minimum"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 76,
+        "fields": {
+            "name": "Eau minérale naturelle non gazeuse"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 77,
+        "fields": {
+            "name": " Pains croustillants"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 78,
+        "fields": {
+            "name": "Produits laitiers"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 79,
+        "fields": {
+            "name": " Matières grasses animales"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 80,
+        "fields": {
+            "name": " Matière grasse laitière"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 81,
+        "fields": {
+            "name": " Produits laitiers à tartiner"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 82,
+        "fields": {
+            "name": " Beurres"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 83,
+        "fields": {
+            "name": " Beurres doux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 84,
+        "fields": {
+            "name": " Beurres de crème douce"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 85,
+        "fields": {
+            "name": " en:Butter-82-fat-unsalted-easy-to-spread"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 86,
+        "fields": {
+            "name": " Beurres tendres"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 87,
+        "fields": {
+            "name": "Gâteaux secs"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 88,
+        "fields": {
+            "name": "Biscuits secs"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 89,
+        "fields": {
+            "name": "Gâteaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 90,
+        "fields": {
+            "name": "Gâteaux secs céréales complètes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 91,
+        "fields": {
+            "name": "Biscuits secs céréales complètes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 92,
+        "fields": {
+            "name": "Céréales et dérivés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 93,
+        "fields": {
+            "name": "Céréales pour petit-déjeuner"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 94,
+        "fields": {
+            "name": "Flocons"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 95,
+        "fields": {
+            "name": "Flocons de céréales"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 96,
+        "fields": {
+            "name": "Céréales extrudées"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 97,
+        "fields": {
+            "name": "Flocons extrudés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 98,
+        "fields": {
+            "name": "Corn-flakes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 99,
+        "fields": {
+            "name": "Biscuits au son de blé"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 100,
+        "fields": {
+            "name": "Biscuits au son de blé et la figue"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 101,
+        "fields": {
+            "name": "Epicerie"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 102,
+        "fields": {
+            "name": "Condiments"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 103,
+        "fields": {
+            "name": "Moutardes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 104,
+        "fields": {
+            "name": "Moutardes de Dijon"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 105,
+        "fields": {
+            "name": "Aliments à base de plantes en conserve"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 106,
+        "fields": {
+            "name": "Moutardes fines"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 107,
+        "fields": {
+            "name": "Brioches tressées"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 108,
+        "fields": {
+            "name": "Brioches pur beurre"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 109,
+        "fields": {
+            "name": "Brioches natures"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 110,
+        "fields": {
+            "name": "Boissons à base de végétaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 111,
+        "fields": {
+            "name": "Boissons aux fruits"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 112,
+        "fields": {
+            "name": "Jus et nectars"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 113,
+        "fields": {
+            "name": "Jus de fruits"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 114,
+        "fields": {
+            "name": "Boissons sans alcool"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 115,
+        "fields": {
+            "name": "Jus d'orange"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 116,
+        "fields": {
+            "name": "Jus de fruits pur jus"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 117,
+        "fields": {
+            "name": "Jus d'orange pur jus"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 118,
+        "fields": {
+            "name": " Produits à tartiner sucrés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 119,
+        "fields": {
+            "name": " Pâtes à tartiner"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 120,
+        "fields": {
+            "name": " Pâtes à tartiner aux noisettes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 121,
+        "fields": {
+            "name": " Pâtes à tartiner au chocolat"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 122,
+        "fields": {
+            "name": " Pâtes à tartiner aux noisettes et au cacao"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 123,
+        "fields": {
+            "name": " Tartines craquantes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 124,
+        "fields": {
+            "name": " Eaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 125,
+        "fields": {
+            "name": " Eaux de sources"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 126,
+        "fields": {
+            "name": " Eaux minérales"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 127,
+        "fields": {
+            "name": " Boissons sans alcool"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 128,
+        "fields": {
+            "name": " Eaux minérales naturelles"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 129,
+        "fields": {
+            "name": " Boissons sans sucre ajouté"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 130,
+        "fields": {
+            "name": " Viennoiseries"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 131,
+        "fields": {
+            "name": " Brioches"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 132,
+        "fields": {
+            "name": " Gâches"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 133,
+        "fields": {
+            "name": " Brioches pur beurre"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 134,
+        "fields": {
+            "name": " Brioches tranchées"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 135,
+        "fields": {
+            "name": " Boissons"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 136,
+        "fields": {
+            "name": " Boissons à base de végétaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 137,
+        "fields": {
+            "name": " Boissons édulcorées"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 138,
+        "fields": {
+            "name": " Boissons au thé"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 139,
+        "fields": {
+            "name": " Thés glacés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 140,
+        "fields": {
+            "name": " Thés glacés saveur pêche"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 141,
+        "fields": {
+            "name": " Boissons avec sucre ajouté"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 142,
+        "fields": {
+            "name": " Boissons chaudes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 143,
+        "fields": {
+            "name": " Cacaos et chocolats en poudre"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 144,
+        "fields": {
+            "name": " Boissons instantanées"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 145,
+        "fields": {
+            "name": " Chocolats en poudre"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 146,
+        "fields": {
+            "name": "Cacao et dérivés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 147,
+        "fields": {
+            "name": " Cacaos en poudre"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 148,
+        "fields": {
+            "name": " Pains blancs"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 149,
+        "fields": {
+            "name": " Pain blanc à base de farine de blé de la plus haute qualité GOST 26987-86"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 150,
+        "fields": {
+            "name": " Pains de mie aux céréales"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 151,
+        "fields": {
+            "name": " Produits fermentés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 152,
+        "fields": {
+            "name": " Produits laitiers fermentés"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 153,
+        "fields": {
+            "name": " Yaourts"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 154,
+        "fields": {
+            "name": " Yaourts nature"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 155,
+        "fields": {
+            "name": " Nature"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 156,
+        "fields": {
+            "name": " Pains de mie blancs nature"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 157,
+        "fields": {
+            "name": "Galettes-au-beurre"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 158,
+        "fields": {
+            "name": " Gâteaux"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 159,
+        "fields": {
+            "name": " Madeleines"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 160,
+        "fields": {
+            "name": " Madeleines natures"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 161,
+        "fields": {
+            "name": " Condiments"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 162,
+        "fields": {
+            "name": " Sauces"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 163,
+        "fields": {
+            "name": " Moutardes"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 164,
+        "fields": {
+            "name": " Moutardes de Dijon"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 165,
+        "fields": {
+            "name": " Moutardes fines"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 166,
+        "fields": {
+            "name": " Moutarde Fine De Dijon"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 167,
+        "fields": {
+            "name": " Gâteaux au chocolat"
+        }
+    },
+    {
+        "model": "product.category",
+        "pk": 168,
+        "fields": {
+            "name": " Pains grillés"
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 1,
+        "fields": {
+            "name": "Cristaline Eau de source",
+            "description": "Eau de source naturelle",
+            "brands": "Cristaline",
+            "stores": "Carrefour,Leclerc,Auchan",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/3274080005003/cristaline-eau-de-source",
+            "image_url": "https://images.openfoodfacts.org/images/products/327/408/000/5003/front_fr.779.400.jpg",
+            "categories": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 2,
+        "fields": {
+            "name": "Nutella",
+            "description": "Pâte à tartiner aux noisettes",
+            "brands": "Ferrero,Nutella",
+            "stores": "Auchan",
+            "nutriscore": "e",
+            "url": "https://fr.openfoodfacts.org/produit/3017620425035/nutella-ferrero",
+            "image_url": "https://images.openfoodfacts.org/images/products/301/762/042/5035/front_fr.330.400.jpg",
+            "categories": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 3,
+        "fields": {
+            "name": "Sésame",
+            "description": "Biscuits au sésame",
+            "brands": "Gerblé",
+            "stores": "E.Leclerc,Carrefour,Auchan",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3175680011480/sesame-gerble",
+            "image_url": "https://images.openfoodfacts.org/images/products/317/568/001/1480/front_fr.139.400.jpg",
+            "categories": [
+                13,
+                14,
+                15,
+                16
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 4,
+        "fields": {
+            "name": "Harrys pain de mie 100% mie complet sans croute",
+            "description": "Pain de mie sans croûte a la farine complète",
+            "brands": "Harrys",
+            "stores": "Magasins U,Delhaize,Carrefour City",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/3228857000166/harrys-pain-de-mie-100-mie-complet-sans-croute",
+            "image_url": "https://images.openfoodfacts.org/images/products/322/885/700/0166/front_fr.158.400.jpg",
+            "categories": [
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 5,
+        "fields": {
+            "name": "Pains au lait",
+            "description": "Pains au lait au levain",
+            "brands": "Pasquier,Brioche Pasquier",
+            "stores": "Cora,Leclerc,Magasins U,Auchan,Carrefour",
+            "nutriscore": "d",
+            "url": "https://fr.openfoodfacts.org/produit/3256540000698/pains-au-lait-pasquier",
+            "image_url": "https://images.openfoodfacts.org/images/products/325/654/000/0698/front_fr.126.400.jpg",
+            "categories": [
+                17,
+                18,
+                13,
+                19,
+                14,
+                7,
+                25,
+                20,
+                26,
+                27,
+                28,
+                29
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 6,
+        "fields": {
+            "name": "Biscuit lait chocolat",
+            "description": "Biscuits aux pépites de chocolat et au lait, source de vitamine B6, B9, E, calcium et magnésium",
+            "brands": "Gerblé,Gerblé Vitalité",
+            "stores": "Intermarché,Carrefour,Carrefour Market,Auchan,Magasins U,Monoprix",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3175680011534/biscuit-lait-chocolat-gerble",
+            "image_url": "https://images.openfoodfacts.org/images/products/317/568/001/1534/front_fr.118.400.jpg",
+            "categories": [
+                13,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 7,
+        "fields": {
+            "name": "pain de mie bio",
+            "description": "Pain de mie Bio à la farine complète",
+            "brands": "La Boulangère Bio, la boulangère",
+            "stores": "carrefour market,Carrefour",
+            "nutriscore": "b",
+            "url": "https://fr.openfoodfacts.org/produit/3760049790214/pain-de-mie-bio-la-boulangere-bio",
+            "image_url": "https://images.openfoodfacts.org/images/products/376/004/979/0214/front_fr.132.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                31,
+                48,
+                49,
+                50,
+                51
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 8,
+        "fields": {
+            "name": "Biscottes 6 Céréales",
+            "description": "Biscottes 6 céréales",
+            "brands": "Heudebert",
+            "stores": "Monoprix,Magasins U,Carrefour",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3392460480827/biscottes-6-cereales-heudebert",
+            "image_url": "https://images.openfoodfacts.org/images/products/339/246/048/0827/front_fr.98.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                48,
+                52,
+                53
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 9,
+        "fields": {
+            "name": "Biscuit pomme noisette",
+            "description": "Biscuits",
+            "brands": "Gerblé",
+            "stores": "Franprix,Magasins U,Leclerc,E Leclerc,Delhaize",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/3175681851849/biscuit-pomme-noisette-gerble",
+            "image_url": "https://images.openfoodfacts.org/images/products/317/568/185/1849/front_fr.124.400.jpg",
+            "categories": [
+                17,
+                46,
+                54,
+                47,
+                30,
+                31,
+                55,
+                32,
+                56,
+                33
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 10,
+        "fields": {
+            "name": "Primevère Bio doux Tartine & Cuisson",
+            "description": "Matière grasse à tartiner et à cuire allégée (55% de MG) issue de l'agriculture biologique",
+            "brands": "Primevère",
+            "stores": "Carrefour",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3155250358788/primevere-bio-doux-tartine-cuisson",
+            "image_url": "https://images.openfoodfacts.org/images/products/315/525/035/8788/front_fr.139.400.jpg",
+            "categories": [
+                17,
+                46,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 11,
+        "fields": {
+            "name": "Pur beurre de cacahuète",
+            "description": "Pur beurre de cacahuètes",
+            "brands": "Jardin Bio,Léa Nature",
+            "stores": "Casino,Leader Price,E.Leclerc",
+            "nutriscore": "b",
+            "url": "https://fr.openfoodfacts.org/produit/3760020507350/pur-beurre-de-cacahuete-jardin-bio",
+            "image_url": "https://images.openfoodfacts.org/images/products/376/002/050/7350/front_fr.232.400.jpg",
+            "categories": [
+                17,
+                46,
+                65,
+                58,
+                66,
+                62,
+                67,
+                68,
+                69,
+                70
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 12,
+        "fields": {
+            "name": "American Sandwich Complet",
+            "description": "Pain de mie a la farine complète",
+            "brands": "Harrys",
+            "stores": "Magasins U,Auchan,Delhaize,Carrefour market",
+            "nutriscore": "b",
+            "url": "https://fr.openfoodfacts.org/produit/3228857000906/american-sandwich-complet-harrys",
+            "image_url": "https://images.openfoodfacts.org/images/products/322/885/700/0906/front_fr.155.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 13,
+        "fields": {
+            "name": "NESTLE DESSERT Noir",
+            "description": "Chocolat noir supérieur",
+            "brands": "Nestlé,NESTLE DESSERT,Tablettes",
+            "stores": "Carrefour market,Coccinelle",
+            "nutriscore": "e",
+            "url": "https://fr.openfoodfacts.org/produit/7613035040823/nestle-dessert-noir",
+            "image_url": "https://images.openfoodfacts.org/images/products/761/303/504/0823/front_fr.195.400.jpg",
+            "categories": [
+                13,
+                71,
+                30,
+                72,
+                73,
+                74,
+                75
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 14,
+        "fields": {
+            "name": "Hépar",
+            "description": "Eau minérale Hépar",
+            "brands": "Hépar",
+            "stores": "Intermarché",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/7613035974685/hepar",
+            "image_url": "https://images.openfoodfacts.org/images/products/761/303/597/4685/front_fr.180.400.jpg",
+            "categories": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                76
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 15,
+        "fields": {
+            "name": "Wasa tartine croustillante fibres",
+            "description": "Produit de boulangerie au seigle riche en fibres alimentaires",
+            "brands": "Wasa",
+            "stores": "Dia,Auchan,Magasins U",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/7300400481588/wasa-tartine-croustillante-fibres",
+            "image_url": "https://images.openfoodfacts.org/images/products/730/040/048/1588/front_fr.142.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                48,
+                52,
+                77
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 16,
+        "fields": {
+            "name": "Le Beurre Tendre barquette doux",
+            "description": "Barquette beurre doux",
+            "brands": "Elle & Vire,Savencia",
+            "stores": "Franprix,Leclerc,Magasins U, Toutes enseignes GMS",
+            "nutriscore": "e",
+            "url": "https://fr.openfoodfacts.org/produit/3451790988677/le-beurre-tendre-barquette-doux-elle-vire",
+            "image_url": "https://images.openfoodfacts.org/images/products/345/179/098/8677/front_fr.176.400.jpg",
+            "categories": [
+                78,
+                57,
+                58,
+                60,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 17,
+        "fields": {
+            "name": "Maxi Tranches sans sucre ajouté Complet 550 GR",
+            "description": "Pain de mie complet sans sucres ajoutés (1) (1) Contient des sucres naturellement présents",
+            "brands": "Jacquet",
+            "stores": "Carrefour,Leclerc",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/3029330022428/maxi-tranches-sans-sucre-ajoute-complet-550-gr-jacquet",
+            "image_url": "https://images.openfoodfacts.org/images/products/302/933/002/2428/front_fr.107.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 18,
+        "fields": {
+            "name": "P'tit Nature Complet 24 biscuits",
+            "description": "biscuit complet",
+            "brands": "Bjorg",
+            "stores": "Magasins U,carrefour,leclerc,Carrefour market,Auchan",
+            "nutriscore": "b",
+            "url": "https://fr.openfoodfacts.org/produit/3229820021027/p-tit-nature-complet-24-biscuits-bjorg",
+            "image_url": "https://images.openfoodfacts.org/images/products/322/982/002/1027/front_fr.162.400.jpg",
+            "categories": [
+                13,
+                14,
+                15,
+                16,
+                87,
+                88,
+                89,
+                90,
+                91
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 19,
+        "fields": {
+            "name": "Céréales Corn Flakes Kellogg's Original",
+            "description": "Pétales de maïs dorés au four enrichis en vitamines et en fer.",
+            "brands": "Kellogg's",
+            "stores": "Cora,Magasins U,Delhaize",
+            "nutriscore": "b",
+            "url": "https://fr.openfoodfacts.org/produit/3159470000120/cereales-corn-flakes-kellogg-s-original",
+            "image_url": "https://images.openfoodfacts.org/images/products/315/947/000/0120/front_fr.139.400.jpg",
+            "categories": [
+                17,
+                18,
+                19,
+                7,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 20,
+        "fields": {
+            "name": "Biscuits Figue et son",
+            "description": "Biscuits au son de blé et la figue, riches en fibres, magnesium et phosphore, source de fer, et tres pauvres en sodium.",
+            "brands": "Gerblé",
+            "stores": "Franprix,Magasins U,Carrefour",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/3251490332080/biscuits-figue-et-son-gerble",
+            "image_url": "https://images.openfoodfacts.org/images/products/325/149/033/2080/front_fr.105.400.jpg",
+            "categories": [
+                13,
+                14,
+                15,
+                16,
+                99,
+                100
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 21,
+        "fields": {
+            "name": "Moutarde de Dijon Fine & Forte",
+            "description": "Moutarde de Dijon.",
+            "brands": "Amora,Unilever",
+            "stores": "Magasins U,Auchan,Carrefour",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/8712100325953/moutarde-de-dijon-fine-forte-amora",
+            "image_url": "https://images.openfoodfacts.org/images/products/871/210/032/5953/front_fr.191.400.jpg",
+            "categories": [
+                101,
+                102,
+                103,
+                104,
+                17,
+                105,
+                106
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 22,
+        "fields": {
+            "name": "brioche tressée nature au sucre perlé sans additifs",
+            "description": "Brioche tressée au sucre perlé",
+            "brands": "Harrys",
+            "stores": "",
+            "nutriscore": "b",
+            "url": "https://fr.openfoodfacts.org/produit/3228857001231/brioche-tressee-nature-au-sucre-perle-sans-additifs-harrys",
+            "image_url": "https://images.openfoodfacts.org/images/products/322/885/700/1231/front_fr.50.400.jpg",
+            "categories": [
+                13,
+                14,
+                25,
+                26,
+                107,
+                108,
+                109
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 23,
+        "fields": {
+            "name": "Jus d'orange sans pulpe",
+            "description": "Jus d'orange",
+            "brands": "Tropicana",
+            "stores": "Magasins U",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3502110009449/jus-d-orange-sans-pulpe-tropicana",
+            "image_url": "https://images.openfoodfacts.org/images/products/350/211/000/9449/front_fr.112.400.jpg",
+            "categories": [
+                17,
+                1,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 24,
+        "fields": {
+            "name": "Primevère Tartine doux végétal",
+            "description": "Matière grasse à tartiner",
+            "brands": "Primevère",
+            "stores": "Intermarché,Carrefour",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3155251205296/primevere-tartine-doux-vegetal",
+            "image_url": "https://images.openfoodfacts.org/images/products/315/525/120/5296/front_fr.95.400.jpg",
+            "categories": [
+                17,
+                46,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 25,
+        "fields": {
+            "name": "Pâte à Tartiner Chocolat Noisette",
+            "description": "Pâte à tartiner au chocolat et aux noisettes bio. Pâte à Tartiner Chocolat Noisette",
+            "brands": "Jardin Bio,  Léa Nature",
+            "stores": "Magasins U,Intermarché,Leclerc",
+            "nutriscore": "d",
+            "url": "https://fr.openfoodfacts.org/produit/3478820023184/pate-a-tartiner-chocolat-noisette-jardin-bio",
+            "image_url": "https://images.openfoodfacts.org/images/products/347/882/002/3184/front_fr.158.400.jpg",
+            "categories": [
+                6,
+                31,
+                118,
+                119,
+                120,
+                121,
+                122
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 26,
+        "fields": {
+            "name": "Wasa tartine croustillante authentique au seigle",
+            "description": "Produit de boulangerie a la farine de seigle",
+            "brands": "Wasa",
+            "stores": "Leclerc,Magasins U",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/7300400481595/wasa-tartine-croustillante-authentique-au-seigle",
+            "image_url": "https://images.openfoodfacts.org/images/products/730/040/048/1595/front_fr.131.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                48,
+                123
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 27,
+        "fields": {
+            "name": "Eau minérale",
+            "description": "Eau minérale",
+            "brands": "Vittel",
+            "stores": "",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/7613036249928/eau-minerale-vittel",
+            "image_url": "https://images.openfoodfacts.org/images/products/761/303/624/9928/front_fr.177.400.jpg",
+            "categories": [
+                1,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 28,
+        "fields": {
+            "name": "La Gâche Tranchée au Beurre Frais et à la Crème Fraîche",
+            "description": "Brioche au beurre frais et à la crème fraîche - La Gâche Tranchée au Beurre Frais et à la Crème Fraîche",
+            "brands": "La Fournée Dorée",
+            "stores": "Magasins U,Auchan",
+            "nutriscore": "d",
+            "url": "https://fr.openfoodfacts.org/produit/3587220002252/la-gache-tranchee-au-beurre-frais-et-a-la-creme-fraiche-la-fournee-doree",
+            "image_url": "https://images.openfoodfacts.org/images/products/358/722/000/2252/front_fr.156.400.jpg",
+            "categories": [
+                13,
+                30,
+                130,
+                131,
+                132,
+                133,
+                134
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 29,
+        "fields": {
+            "name": "St hubert bio doux 245g ss hdp",
+            "description": "Matière grasse allégée à tartiner et à cuire issue de l'agriculture biologique (52% de MG).",
+            "brands": "St Hubert, St hubert bio",
+            "stores": "quantités",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3366321052331/st-hubert-bio-doux-245g-ss-hdp",
+            "image_url": "https://images.openfoodfacts.org/images/products/336/632/105/2331/front_fr.118.400.jpg",
+            "categories": [
+                17,
+                46,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 30,
+        "fields": {
+            "name": "Lipton Ice Tea saveur Pêche",
+            "description": "Boisson rafraîchissante aux extraits de thé et arômatisée pêche, avec sucres et édulcorant",
+            "brands": "Lipton",
+            "stores": "Magasins U,Intermarché,Auchan",
+            "nutriscore": "d",
+            "url": "https://fr.openfoodfacts.org/produit/3228886048436/lipton-ice-tea-saveur-peche",
+            "image_url": "https://images.openfoodfacts.org/images/products/322/888/604/8436/front_fr.170.400.jpg",
+            "categories": [
+                17,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 31,
+        "fields": {
+            "name": "NESQUIK Moins de Sucres",
+            "description": "Préparation en poudre instantanée pour boisson cacaotée",
+            "brands": "Nestlé,Nesquik",
+            "stores": "Cora,Magasins U",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/7613035530799/nesquik-moins-de-sucres-nestle",
+            "image_url": "https://images.openfoodfacts.org/images/products/761/303/553/0799/front_fr.192.400.jpg",
+            "categories": [
+                1,
+                31,
+                72,
+                142,
+                143,
+                144,
+                145
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 32,
+        "fields": {
+            "name": "Goûter pépites de chocolat",
+            "description": "Biscuits au chocolat, riches en magnésium, calcium et en vitamine E, source de vitamines B1, PP, B5 et B9",
+            "brands": "Gerblé",
+            "stores": "Carrefour Market,Monoprix,Magasins U",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3251490307002/gouter-pepites-de-chocolat-gerble",
+            "image_url": "https://images.openfoodfacts.org/images/products/325/149/030/7002/front_fr.55.400.jpg",
+            "categories": [
+                13,
+                30,
+                32,
+                33,
+                34
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 33,
+        "fields": {
+            "name": "Cacao en poudre non sucré",
+            "description": "cacao en poudre",
+            "brands": "Van houten",
+            "stores": "Auchan,Carrefour,Intermarché,Magasins U",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/4006985902304/cacao-en-poudre-non-sucre-van-houten",
+            "image_url": "https://images.openfoodfacts.org/images/products/400/698/590/2304/front_fr.149.400.jpg",
+            "categories": [
+                143,
+                146,
+                147
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 34,
+        "fields": {
+            "name": "Harrys beau & bon pain de mie farine de ble cereales & graines",
+            "description": "Pain de mie a la farine de blé et aux céréales et aux graines",
+            "brands": "Harrys",
+            "stores": "casino",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/3228857001194/harrys-beau-bon-pain-de-mie-farine-de-ble-cereales-graines",
+            "image_url": "https://images.openfoodfacts.org/images/products/322/885/700/1194/front_fr.41.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                48,
+                49,
+                148,
+                149,
+                150
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 35,
+        "fields": {
+            "name": "Yaourt nature",
+            "description": "Yaourt nature - Le Nature",
+            "brands": "Danone",
+            "stores": "Intermarché,Magasins U",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/3033490004521/yaourt-nature-danone",
+            "image_url": "https://images.openfoodfacts.org/images/products/303/349/000/4521/front_fr.79.400.jpg",
+            "categories": [
+                78,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 36,
+        "fields": {
+            "name": "Evian 1.5L",
+            "description": "Eau minérale",
+            "brands": "Evian",
+            "stores": "Carrefour,leclerc  hyper U,Supermarchés",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/3068320120256/evian-1-5l",
+            "image_url": "https://images.openfoodfacts.org/images/products/306/832/012/0256/front_fr.58.400.jpg",
+            "categories": [
+                1,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 37,
+        "fields": {
+            "name": "Harrys pain de mie extra moelleux nature sans sucres ajoutés",
+            "description": "Pain de mie",
+            "brands": "Harrys",
+            "stores": "Franprix,Carrefour,Magasins U,Carrefour market",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/3228857000883/harrys-pain-de-mie-extra-moelleux-nature-sans-sucres-ajoutes",
+            "image_url": "https://images.openfoodfacts.org/images/products/322/885/700/0883/front_fr.88.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                48,
+                49,
+                156
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 38,
+        "fields": {
+            "name": "Galettes St Michel",
+            "description": "Galettes Pur Beurre",
+            "brands": "St Michel",
+            "stores": "Epicerie,Super U,Auchan,Magasins U,Leclerc",
+            "nutriscore": "e",
+            "url": "https://fr.openfoodfacts.org/produit/3023470001015/galettes-st-michel",
+            "image_url": "https://images.openfoodfacts.org/images/products/302/347/000/1015/front_fr.199.400.jpg",
+            "categories": [
+                157
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 39,
+        "fields": {
+            "name": "Léger",
+            "description": "Produit de boulangerie a la farine complète de seigle",
+            "brands": "Wasa",
+            "stores": "Magasins U,Leclerc,Carrefour Market",
+            "nutriscore": "a",
+            "url": "https://fr.openfoodfacts.org/produit/7300400481571/leger-wasa",
+            "image_url": "https://images.openfoodfacts.org/images/products/730/040/048/1571/front_fr.88.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                48,
+                123,
+                77
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 40,
+        "fields": {
+            "name": "Petites madeleines",
+            "description": "Madeleines aux oeufs de poules élevées en plein air",
+            "brands": "SAINT MICHEL",
+            "stores": "netto,Magasins U, casino",
+            "nutriscore": "d",
+            "url": "https://fr.openfoodfacts.org/produit/3178530410105/petites-madeleines-saint-michel",
+            "image_url": "https://images.openfoodfacts.org/images/products/317/853/041/0105/front_fr.156.400.jpg",
+            "categories": [
+                15,
+                158,
+                159,
+                160
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 41,
+        "fields": {
+            "name": "L'Originale Moutarde Fine De Dijon",
+            "description": "Moutarde de Dijon.",
+            "brands": "Maille",
+            "stores": "Magasins U,Delhaize",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/8712100871986/l-originale-moutarde-fine-de-dijon-maille",
+            "image_url": "https://images.openfoodfacts.org/images/products/871/210/087/1986/front_fr.121.400.jpg",
+            "categories": [
+                101,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 42,
+        "fields": {
+            "name": "Cracotte",
+            "description": "Tartines craquantes au froment enrichies en fer",
+            "brands": "LU,mondelez",
+            "stores": "Leclerc,Intermarché,Magasins U,Delhaize",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3041090063114/cracotte-lu",
+            "image_url": "https://images.openfoodfacts.org/images/products/304/109/006/3114/front_fr.136.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                31,
+                48,
+                123
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 43,
+        "fields": {
+            "name": "Napolitain l'Original",
+            "description": "Gâteau fourrage au chocolat - Napolitain Classic",
+            "brands": "Lu",
+            "stores": "Carrefour,Magasins U,Cora Intermarche SuperU",
+            "nutriscore": "e",
+            "url": "https://fr.openfoodfacts.org/produit/3017760290692/napolitain-l-original-lu",
+            "image_url": "https://images.openfoodfacts.org/images/products/301/776/029/0692/front_fr.132.400.jpg",
+            "categories": [
+                13,
+                71,
+                30,
+                32,
+                158,
+                167
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 44,
+        "fields": {
+            "name": "Pain grillé au blé complet",
+            "description": "Pain grillé de campagne à la farine complète de blé - Pain Grillé Blé Complet",
+            "brands": "Pelletier,LU,Mondelez",
+            "stores": "Carrefour,Leclerc,Magasins U",
+            "nutriscore": "c",
+            "url": "https://fr.openfoodfacts.org/produit/3017760542890/pain-grille-au-ble-complet-pelletier",
+            "image_url": "https://images.openfoodfacts.org/images/products/301/776/054/2890/front_fr.128.400.jpg",
+            "categories": [
+                17,
+                46,
+                47,
+                48,
+                168,
+                52
+            ]
+        }
+    }
+]
