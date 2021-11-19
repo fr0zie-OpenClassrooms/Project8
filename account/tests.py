@@ -1,4 +1,4 @@
-from django.test import TestCase, Client
+from django.test import TestCase
 from django.urls import reverse
 
 from account.models import User
@@ -38,14 +38,14 @@ class LoginTest(BaseTest):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "account/login.html")
 
-    def test_user_login(self):
+    def test_user_cant_login(self):
         response = self.client.post(self.login_url, self.user, format="text/html")
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, 400)
 
 
 class UserTest(BaseTest):
     def setUp(self):
-        User.objects.create(
+        User.objects.create_user(
             username="TestUser",
             email="testuser@purbeurre.fr",
             password="t8VhtmOUpYJ39Tb0",
@@ -54,9 +54,7 @@ class UserTest(BaseTest):
     def test_get_user_by_email(self):
         user = User.objects.get(email="testuser@purbeurre.fr")
         self.assertEqual(user.username, "TestUser")
-        self.assertEqual(user.password, "t8VhtmOUpYJ39Tb0")
 
     def test_get_user_by_username(self):
         user = User.objects.get(username="TestUser")
         self.assertEqual(user.email, "testuser@purbeurre.fr")
-        self.assertEqual(user.password, "t8VhtmOUpYJ39Tb0")

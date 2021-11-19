@@ -1,11 +1,20 @@
 import requests
 
-from product.models import Product, Category
+from product.models import Product, Category, Nutriscore
 
 
 class Fill:
-    products = []
-    cleaned_products = []
+    def __init__(self):
+        self.raw_products = []
+        self.products = []
+        self.cleaned_products = []
+
+    def add_nutriscores(self):
+        nutriscores = ["a", "b", "c", "d", "e"]
+        for nutriscore in nutriscores:
+            nutriscore, created = Nutriscore.objects.get_or_create(
+                nutriscore=nutriscore
+            )
 
     def get_products(self, max_page=10, page_size=1000):
         """Method used to loop OpenFoodFacts request to get products data."""
@@ -17,17 +26,17 @@ class Fill:
                 "tagtype_0": "categories",
                 "tagtype_1": "countries",
                 "tag_contains_1": "france",
-                "fields": "categories,categories_lc,brands,generic_name_fr,image_url,nutrition_grade_fr,product_name,stores,url",
+                "fields": "categories,categories_lc,brands,generic_name_fr,image_url,image_nutrition_url,nutrition_grade_fr,product_name,stores,url",
                 "page_size": page_size,
                 "page": page_nb,
                 "json": 1,
             }
 
-            products_url = requests.get(
+            self.raw_products = requests.get(
                 "https://fr.openfoodfacts.org/cgi/search.pl", params=params
             )
 
-            self.products.extend(products_url.json()["products"])
+            self.products.extend(self.raw_products.json()["products"])
             page_nb += 1
 
     def clean_products(self):
@@ -43,6 +52,7 @@ class Fill:
 
             # Get product categories
             categories = [item for item in item["categories"].strip(" ").split(",")]
+
             if not categories:
                 continue
 
@@ -53,20 +63,19 @@ class Fill:
 
             # Get product description
             product.description = item.get("generic_name_fr", "")
-            if not product.description:
-                continue
 
             # Get product brand
             product.brands = item.get("brands", "")
-            if not product.brands:
-                continue
 
             # Get product store
             product.stores = item.get("stores", "")
 
             # Get product nutriscore
-            product.nutriscore = item.get("nutrition_grade_fr")
-            if not product.nutriscore:
+            try:
+                product.nutriscore = Nutriscore.objects.get(
+                    nutriscore=item.get("nutrition_grade_fr")
+                )
+            except:
                 continue
 
             # Get product URL
@@ -79,14 +88,18 @@ class Fill:
             if not product.image_url:
                 continue
 
+            # Get product nutrition image URL
+            product.image_nutrition_url = item.get("image_nutrition_url", "")
+            if not product.image_nutrition_url:
+                continue
+
             self.cleaned_products.append((product, categories))
 
     def create_products_and_categories(self):
         """Method used to insert products and categories in database."""
 
-        try:
-            for item in self.cleaned_products:
-                product = item[0]
+        for product, categories in self.cleaned_products:
+            try:
                 prod, created = Product.objects.get_or_create(
                     name=product.name,
                     defaults={
@@ -96,12 +109,12 @@ class Fill:
                         "nutriscore": product.nutriscore,
                         "url": product.url,
                         "image_url": product.image_url,
+                        "image_nutrition_url": product.image_nutrition_url,
                     },
                 )
 
-                for category in item[1]:
-                    print(category)
+                for category in categories:
                     cat, created = Category.objects.get_or_create(name=category)
                     prod.categories.add(cat)
-        except Exception as e:
-            raise (e)
+            except:
+                pass

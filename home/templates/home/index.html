@@ -12,12 +12,14 @@
                 <h2 class="text-white font-weight-light">Trouvez un produit de substitution pour ceux que vous consommez
                     tous les jours.</h2>
             </div>
-            <div class="col-lg-8 align-self-baseline input-group">
-                <input type="text" class="form-control" placeholder="Chercher un aliment...">
-                <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
-            </div>
+            <form action="{% url 'search' %}" method="POST" class="form">
+                <div class="col-lg-8 align-self-baseline input-group">
+                    {% csrf_token %}
+                    <input type="text" class="form-control" placeholder="Chercher..." name="search-request">
+                    <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
+                </div>
+            </form>
         </div>
-    </div>
     </div>
 </header>
 

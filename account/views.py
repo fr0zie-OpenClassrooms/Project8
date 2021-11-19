@@ -33,15 +33,14 @@ def user_login(request):
         if user is not None:
             login(request, user)
             messages.add_message(request, messages.SUCCESS, "Vous êtes connecté !")
+            return redirect("account")
         else:
             messages.add_message(
                 request, messages.ERROR, "Les champs renseignés sont invalides."
             )
+            return render(request, "account/login.html", status=400)
 
-        return redirect("account")
-
-    context = {}
-    return render(request, "account/login.html", context)
+    return render(request, "account/login.html")
 
 
 def user_logout(request):

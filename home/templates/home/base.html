@@ -22,34 +22,38 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <div class="input-group mt-1">
-                        <form action="" method="GET" class="form">
-                            <input type="text" class="form-control" placeholder="Chercher...">
+                        <form action="{% url 'search' %}" method="POST" class="form">
+                            {% csrf_token %}
+                            <input type="text" class="form-control" placeholder="Chercher..." name="search-request">
                         </form>
                     </div>
                     {% if request.user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'account' %}"><img
                                 src="{% static 'img/menu/user_on.png' %}"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'substitutes' %}"><img
+                                src="{% static 'img/menu/food.png' %}"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}"><img
+                                src="{% static 'img/menu/logout.png' %}"></a></li>
                     {% else %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'account' %}"><img
                                 src="{% static 'img/menu/user_off.png' %}"></a></li>
-                    {% endif %}
-                    <li class="nav-item"><a class="nav-link" href="#food"><img
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account' %}"><img
                                 src="{% static 'img/menu/food.png' %}"></a></li>
-                    {% if request.user.is_authenticated %}
-                    <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}"><img
-                                src="{% static 'img/menu/logout.png' %}"></a></li>
                     {% endif %}
                 </ul>
             </div>
         </div>
     </nav>
 
-    {% block content %}
-    {% endblock %}
+    <div class="wrapper">
+        {% block content %}
+        {% endblock %}
+        <div class="push"></div>
+    </div>
 
-    <footer class="bg-light py-5 text-center">
+    <footer class="footer bg-light py-5 text-center">
         <div class="container px-4 px-lg-5">
-            <a href="{% url 'home' %}#contact" class="small text-muted text-decoration-none">Mentions
+            <a href="{% url 'home' %}" class="small text-muted text-decoration-none">Mentions
                 légales</a>
             <a href="{% url 'home' %}#contact"
                 class="small text-muted text-decoration-none blockquote-footer">Contact</a>
