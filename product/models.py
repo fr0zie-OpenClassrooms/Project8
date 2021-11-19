@@ -59,9 +59,12 @@ class Product(models.Model):
         )
 
         for substitute in substitutes:
-            if len(filtered_substitutes) < 30 and ord(
-                substitute.nutriscore.nutriscore
-            ) <= ord(product.nutriscore.nutriscore):
+            if (
+                len(filtered_substitutes) < 30
+                and substitute != product
+                and ord(substitute.nutriscore.nutriscore)
+                <= ord(product.nutriscore.nutriscore)
+            ):
                 filtered_substitutes.append(substitute)
 
         return filtered_substitutes
