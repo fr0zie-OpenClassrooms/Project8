@@ -28,7 +28,7 @@
                 <form method="POST" action="{% url 'delete' %}">
                     {% csrf_token %}
                     <input name="substitute" value="{{substitute.substitute.name}}" type="hidden">
-                    <button type="submit" class="btn">Supprimer</button>
+                    <button type="submit" class="btn btn-primary">Supprimer</button>
                 </form>
             </div>
             {% endfor %}

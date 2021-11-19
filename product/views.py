@@ -74,11 +74,11 @@ def substitutes(request):
 
 
 @login_required(login_url="login")
-def save(request):
-    if request.method == "POST":
+def save(request, substitute_id=None):
+    if request.method == "POST" and substitute_id != None:
         user = request.user
         product = Product.objects.get(name=request.POST["product"])
-        substitute = Product.objects.get(name=request.POST["substitute"])
+        substitute = Product.objects.get(id=substitute_id)
 
         for saved_substitute in user.substitute_set.all():
             if saved_substitute.substitute.name == substitute.name:

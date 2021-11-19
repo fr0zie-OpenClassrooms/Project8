@@ -23,10 +23,9 @@
                     <a href="{% url 'details' product_name=substitute.name %}"><img src={{substitute.image_url}}></a>
                 </div>
                 <div class="save">
-                    <form method="POST" action="{% url 'save' %}">
+                    <form method="POST" action="{% url 'save' substitute.id %}">
                         {% csrf_token %}
                         <input name="product" value="{{product.name}}" type="hidden">
-                        <input name="substitute" value="{{substitute.name}}" type="hidden">
                         <button type="submit" class="btn btn-primary" {% if substitute.saved %}disabled{% endif %}>
                             {% if substitute.saved %}Sauvegardé{% else %}Sauvegarder{% endif %}
                         </button>
