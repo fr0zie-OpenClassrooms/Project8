@@ -1,0 +1,63 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+<header class="mini-masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 justify-content-center text-center">
+            <div class="col-lg-8 align-self-center">
+                <h1 class="text-white font-weight-bold">Mes substituts</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="page-section text-center" id="substitutes">
+    <div class="container px-4 px-lg-5">
+        <div class="row">
+            {% for substitute in substitutes %}
+            <div class="col-lg-4 text-center">
+                <p class="text-muted mb-0">{{substitute.substitute.name}}</p>
+                <div class="product">
+                    <span class="nutriscore">{{substitute.substitute.nutriscore.nutriscore}}</span>
+                    <a href="{% url 'details' product_name=substitute.substitute.name %}"><img
+                            src={{substitute.substitute.image_url}}></a>
+                </div>
+                <p>Substitut de: <a
+                        href="{% url 'details' product_name=substitute.product.name %}">{{substitute.product.name}}</a>
+                </p>
+                <form method="POST" action="{% url 'delete' %}">
+                    {% csrf_token %}
+                    <input name="substitute" value="{{substitute.substitute.name}}" type="hidden">
+                    <button type="submit" class="btn">Supprimer</button>
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% if substitutes.has_other_pages %}
+<ul class="pagination justify-content-center">
+    {% if substitutes.has_previous %}
+    <li class="page-item"><a class="page-link"
+            href="?product={{product.name}}&page={{substitutes.previous_page_number}}">&laquo;</a>
+    </li>
+    {% else %}
+    <li class="page-item disabled"><a class="page-link"><span>&laquo;</span></a></li>
+    {% endif %}
+    {% for i in substitutes.paginator.page_range %}
+    {% if substitutes.number == i %}
+    <li class="page-item active"><a class="page-link"><span class="sr-only">{{i}}</span></a></li>
+    {% else %}
+    <li class="page-item"><a class="page-link" href="?product={{product.name}}&page={{i}}">{{i}}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% if substitutes.has_next %}
+    <li class="page-item"><a class="page-link"
+            href="?product={{product.name}}&page={{substitutes.next_page_number}}">&raquo;</a></li>
+    {% else %}
+    <li class="page-item disabled"><a class="page-link"><span>&raquo;</span></a></li>
+    {% endif %}
+</ul>
+{% endif %}
+{% endblock %}
