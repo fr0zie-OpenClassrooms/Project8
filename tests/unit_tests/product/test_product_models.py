@@ -37,6 +37,7 @@ class TestProductModels:
 class TestProductFill:
     def setup_method(self):
         self.fill = Fill()
+        self.fill.add_nutriscores()
 
     @pytest.mark.django_db
     def test_get_products(self, mocker):
@@ -57,14 +58,14 @@ class TestProductFill:
         self.fill.get_products(1, 100)
         self.fill.clean_products()
         for product, categories in self.fill.cleaned_products:
-            assert product.name == True
-            assert product.description == True
-            assert product.brands == True
-            assert product.nutriscore == True
-            assert product.url == True
-            assert product.image_url == True
+            assert product.name
+            assert product.description
+            assert product.brands
+            assert product.nutriscore
+            assert product.url
+            assert product.image_url
             for category in categories:
-                assert category == True
+                assert category
 
     @pytest.mark.django_db
     def test_cleaned_products_found_in_database(self, mocker):
@@ -73,7 +74,7 @@ class TestProductFill:
         self.fill.clean_products()
         self.fill.create_products_and_categories()
         for product, categories in self.fill.cleaned_products:
-            assert Product.objects.get(name=product.name) == True
+            assert Product.objects.get(name=product.name)
 
 
 def mocked_requests_get(*args, **kwargs):

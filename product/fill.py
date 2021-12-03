@@ -70,7 +70,6 @@ class Fill:
             product.stores = item.get("stores", "")
 
             # Get product nutriscore
-            # Erreur dans Test
             try:
                 product.nutriscore = Nutriscore.objects.get(
                     nutriscore=item.get("nutrition_grade_fr")
