@@ -16,13 +16,13 @@
         <div class="row">
             {% for substitute in substitutes %}
             <div class="col-lg-4 text-center">
-                <p class="text-muted mb-0">{{substitute.substitute.name}}</p>
+                <p id="substitute" class="text-muted mb-0">{{substitute.substitute.name}}</p>
                 <div class="product">
                     <span class="nutriscore">{{substitute.substitute.nutriscore.nutriscore}}</span>
                     <a href="{% url 'details' product_name=substitute.substitute.name %}"><img
                             src={{substitute.substitute.image_url}}></a>
                 </div>
-                <p>Substitut de: <a
+                <p>Substitut de: <a id="product"
                         href="{% url 'details' product_name=substitute.product.name %}">{{substitute.product.name}}</a>
                 </p>
                 <form method="POST" action="{% url 'delete' %}">

@@ -15,37 +15,40 @@ def search(request):
 
     if product_name:
         product = Product.get_product(product_name)
-        substitutes = Product.find_substitute(product)
-        paginator = Paginator(substitutes, 6)
-        page = request.GET.get("page")
 
-        try:
-            substitutes_in_page = paginator.page(page)
-        except PageNotAnInteger:
-            substitutes_in_page = paginator.page(1)
-        except EmptyPage:
-            substitutes_in_page = paginator.page(paginator.num_pages)
+        if product:
+            substitutes = Product.find_substitute(product)
+            paginator = Paginator(substitutes, 6)
+            page = request.GET.get("page")
 
-        for substitute in substitutes_in_page:
             try:
-                Substitute.objects.get(substitute=substitute)
-                substitute.saved = True
-            except Substitute.DoesNotExist:
-                pass
+                substitutes_in_page = paginator.page(page)
+            except PageNotAnInteger:
+                substitutes_in_page = paginator.page(1)
+            except EmptyPage:
+                substitutes_in_page = paginator.page(paginator.num_pages)
 
-        context = {
-            "product": product,
-            "substitutes": substitutes_in_page,
-        }
+            for substitute in substitutes_in_page:
+                try:
+                    Substitute.objects.get(substitute=substitute)
+                    substitute.saved = True
+                except Substitute.DoesNotExist:
+                    pass
 
-    return render(request, "product/search.html", context)
+            context = {
+                "product": product,
+                "substitutes": substitutes_in_page,
+            }
+
+            return render(request, "product/search.html", context)
+    return render(request, "home/404.html", status=404)
 
 
 def details(request, product_name=None):
     try:
         product = Product.objects.get(name=product_name)
     except Product.DoesNotExist:
-        return render(request, "product/404.html")
+        return render(request, "home/404.html", status=404)
     else:
         context = {
             "product": product,

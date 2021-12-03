@@ -24,11 +24,14 @@ class Product(models.Model):
     categories = models.ManyToManyField(Category)
 
     def get_product(product_name):
-        product = Product.objects.filter(name__icontains=product_name)[0]
-        if product:
-            return product
-        else:
+        products = Product.objects.filter(name__icontains=product_name)
+
+        try:
+            product = products[0]
+        except:
             return None
+        else:
+            return product
 
     def find_substitute(product):
         substitutes = []

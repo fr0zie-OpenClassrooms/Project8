@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from config.fill import Fill
+from ...fill import Fill
 
 
 class Command(BaseCommand):
