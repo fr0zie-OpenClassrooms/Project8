@@ -1,6 +1,9 @@
 .env
 .venv
 .vscode
+.coverage
+.coveragerc
 .pytest_cache
 .temp
 __pycache__
+migrations
