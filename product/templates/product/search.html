@@ -20,12 +20,12 @@
                 <p class="text-muted mb-0">{{substitute.name}}</p>
                 <div class="product">
                     <span class="nutriscore">{{substitute.nutriscore.nutriscore}}</span>
-                    <a href="{% url 'details' product_name=substitute.name %}"><img class="img"
-                            src={{substitute.image_url}}></a>
+                    <a href="{% url 'details' substitute.name %}"><img class="img" src={{substitute.image_url}}></a>
                 </div>
                 <div class="save">
                     <form method="POST" action="{% url 'save' substitute.id %}">
                         {% csrf_token %}
+                        <p>{{substitute.id}}</p>
                         <input name="product" value="{{product.name}}" type="hidden">
                         <button type="submit" class="btn btn-primary" {% if substitute.saved %}disabled{% endif %}>
                             {% if substitute.saved %}Sauvegardé{% else %}Sauvegarder{% endif %}

@@ -79,6 +79,8 @@ def substitutes(request):
 @login_required(login_url="login")
 def save(request, substitute_id=None):
     if request.method == "POST" and substitute_id != None:
+        print(substitute_id)
+        breakpoint()
         user = request.user
         product = Product.objects.get(name=request.POST["product"])
         substitute = Product.objects.get(id=substitute_id)
