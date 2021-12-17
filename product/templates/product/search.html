@@ -23,13 +23,14 @@
                     <a href="{% url 'details' substitute.name %}"><img class="img" src={{substitute.image_url}}></a>
                 </div>
                 <div class="save">
-                    <form method="POST" action="{% url 'save' substitute.id %}">
+                    <form method="POST" action="{% url 'save' %}">
                         {% csrf_token %}
-                        <p>{{substitute.id}}</p>
                         <input name="product" value="{{product.name}}" type="hidden">
-                        <button type="submit" class="btn btn-primary" {% if substitute.saved %}disabled{% endif %}>
+                        <button name="save" type="submit" value="{{product.name}},{{substitute.id}}"
+                            class="btn btn-primary" {% if substitute.saved %}disabled{% endif %}>
                             {% if substitute.saved %}Sauvegardé{% else %}Sauvegarder{% endif %}
                         </button>
+                        {{substitute.id}}
                 </div>
             </div>
             {% endfor %}

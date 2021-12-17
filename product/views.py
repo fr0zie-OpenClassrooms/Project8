@@ -54,6 +54,7 @@ def details(request, product_name=None):
             "product": product,
             "nutriscore_img": f"nutriscore-{product.nutriscore.nutriscore}.png",
         }
+
         return render(request, "product/details.html", context)
 
 
@@ -77,12 +78,14 @@ def substitutes(request):
 
 
 @login_required(login_url="login")
-def save(request, substitute_id=None):
-    if request.method == "POST" and substitute_id != None:
-        print(substitute_id)
-        breakpoint()
+def save(request):
+    if request.method == "POST":
         user = request.user
-        product = Product.objects.get(name=request.POST["product"])
+        query = request.POST["save"]
+        query_list = query.split(",")
+        product_name = query_list[0]
+        substitute_id = query_list[1]
+        product = Product.objects.get(name=product_name)
         substitute = Product.objects.get(id=substitute_id)
 
         for saved_substitute in user.substitute_set.all():
@@ -98,7 +101,8 @@ def save(request, substitute_id=None):
 def delete(request):
     if request.method == "POST":
         user = request.user
-        substitute = request.POST["substitute"]
-        substitute = Substitute.objects.get(user=user, substitute__name=substitute)
+        substitute = Substitute.objects.get(
+            user=user, substitute__name=request.POST["substitute"]
+        )
         substitute.delete()
     return redirect("/product/substitutes/")
