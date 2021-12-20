@@ -25,7 +25,6 @@
                 <div class="save">
                     <form method="POST" action="{% url 'save' %}">
                         {% csrf_token %}
-                        <input name="product" value="{{product.name}}" type="hidden">
                         <button name="save" type="submit" value="{{product.name}},{{substitute.id}}"
                             class="btn btn-primary" {% if substitute.saved %}disabled{% endif %}>
                             {% if substitute.saved %}Sauvegardé{% else %}Sauvegarder{% endif %}
