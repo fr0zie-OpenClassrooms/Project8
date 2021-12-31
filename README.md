@@ -1,4 +1,4 @@
-# Project 8: Pur Beurre program using OpenFoodFacts API
+# Project 8/10: Pur Beurre program using OpenFoodFacts API
 
 This Django project interacts with the OpenFoodFacts API in order to find a healthier food substitute according to the desired product.
 
