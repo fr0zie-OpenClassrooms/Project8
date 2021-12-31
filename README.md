@@ -48,7 +48,7 @@ To start the server, run the following command:
 python manage.py runserver
 ```
 
-You can now access your local server on [localhost](http://localhost:8000/)
+You can now access your local server on [localhost](http://localhost:8000/).
 
 ### Tests
 
