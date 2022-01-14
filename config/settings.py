@@ -1,10 +1,18 @@
 import os
 import dj_database_url
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 from pathlib import Path
+
+sentry_sdk.init(
+    dsn="https://50f711adf3e34de885dbba45729d699d@o1116273.ingest.sentry.io/6149515",
+    integrations=[DjangoIntegration()],
+    traces_sample_rate=1.0,
+    send_default_pii=True
+)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -15,7 +23,7 @@ SECRET_KEY = "django-insecure-bep+5%+^-*@-ow+kr=@kgw69xk*3@jyit5em4_*eo!21@*rac+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["purbeurr3.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["167.71.44.70", "purbeurr3.herokuapp.com", "localhost"]
 
 # Application definition
 
@@ -32,7 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Whitenoise
-    "whitenoise.runserver_nostatic",
+    #"whitenoise.runserver_nostatic",
 ]
 
 MIDDLEWARE = [
@@ -43,10 +51,10 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    #"whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+#STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 ROOT_URLCONF = "config.urls"
 
@@ -75,7 +83,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "purbeurre",
-        "USER": "postgres",
+        "USER": "fr0zie",
         "PASSWORD": "1813",
         "HOST": "localhost",
         "PORT": "5432",
