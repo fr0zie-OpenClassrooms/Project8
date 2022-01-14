@@ -39,6 +39,7 @@ jobs:
       - checkout
       - browser-tools/install-firefox
       - browser-tools/install-geckodriver
+      - run: sudo apt install chromium-chromedriver
       - python/install-packages:
           pkg-manager: pip
           # app-dir: ~/project/package-directory/  # If you're requirements.txt isn't in the root directory.
