@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # Cron
+    "django_crontab",
     # Whitenoise
     #"whitenoise.runserver_nostatic",
 ]
@@ -52,6 +54,10 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     #"whitenoise.middleware.WhiteNoiseMiddleware",
+]
+
+CRONJOBS = [
+    ("0 0 * * 0", "config.cron.fill"),
 ]
 
 #STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
