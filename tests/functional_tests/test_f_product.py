@@ -87,9 +87,8 @@ class TestProduct(StaticLiveServerTestCase):
 
     def test_search_and_save_substitute(self):
         # Search for 'Nutella'
-        self.browser.implicitly_wait(10)
         self.browser.get(self.live_server_url)
-        search = self.browser.find_element(By.NAME, "search-request")
+        search = self.browser.find_element(By.ID, "search")
         search.send_keys("Nutella")
         search.send_keys(Keys.RETURN)
 
@@ -108,9 +107,8 @@ class TestProduct(StaticLiveServerTestCase):
 
     def test_search_and_view_substitute_details(self):
         # Search for 'Nutella'
-        self.browser.implicitly_wait(10)
         self.browser.get(self.live_server_url)
-        search = self.browser.find_element(By.NAME, "search-request")
+        search = self.browser.find_element(By.ID, "search")
         search.send_keys("Nutella")
         search.send_keys(Keys.RETURN)
 

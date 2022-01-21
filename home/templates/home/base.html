@@ -24,7 +24,7 @@
                     <div class="input-group mt-1">
                         <form action="{% url 'search' %}" method="POST" class="form">
                             {% csrf_token %}
-                            <input type="text" class="form-control" placeholder="Chercher..." name="search-request">
+                            <input id="search" type="text" class="form-control" placeholder="Chercher..." name="search-request">
                         </form>
                     </div>
                     {% if request.user.is_authenticated %}
