@@ -8,7 +8,7 @@ sentry_sdk.init(
     dsn="https://50f711adf3e34de885dbba45729d699d@o1116273.ingest.sentry.io/6149515",
     integrations=[DjangoIntegration()],
     traces_sample_rate=1.0,
-    send_default_pii=True
+    send_default_pii=True,
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     # Cron
     "django_crontab",
     # Whitenoise
-    #"whitenoise.runserver_nostatic",
+    # "whitenoise.runserver_nostatic",
 ]
 
 MIDDLEWARE = [
@@ -53,14 +53,14 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    #"whitenoise.middleware.WhiteNoiseMiddleware",
+    # "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 CRONJOBS = [
-    ("0 0 * * 0", "config.cron.fill"),
+    # ("0 0 * * 0", "config.cron.fill"),
 ]
 
-#STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 ROOT_URLCONF = "config.urls"
 
