@@ -91,7 +91,7 @@ class TestProduct(StaticLiveServerTestCase):
         # Search for 'Nutella'
         self.browser.get(self.live_server_url)
         wait = WebDriverWait(self.browser, 10)
-        wait.until(EC.element_to_be_clickable(By.NAME, "search-request")).send_keys(
+        wait.until(EC.element_to_be_clickable((By.NAME, "search-request"))).send_keys(
             "Nutella"
         ).send_keys(Keys.RETURN)
         # search = self.browser.find_element(By.NAME, "search-request")
@@ -115,7 +115,7 @@ class TestProduct(StaticLiveServerTestCase):
         # Search for 'Nutella'
         self.browser.get(self.live_server_url)
         wait = WebDriverWait(self.browser, 10)
-        wait.until(EC.element_to_be_clickable(By.NAME, "search-request")).send_keys(
+        wait.until(EC.element_to_be_clickable((By.NAME, "search-request"))).send_keys(
             "Nutella"
         ).send_keys(Keys.RETURN)
         # search = self.browser.find_element(By.ID, "search")
