@@ -90,6 +90,7 @@ class TestProduct(StaticLiveServerTestCase):
     def test_search_and_save_substitute(self):
         # Search for 'Nutella'
         self.browser.get(self.live_server_url)
+        print(self.live_server_url)
         wait = WebDriverWait(self.browser, 10)
         wait.until(
             EC.element_located_to_be_selected((By.NAME, "search-request"))
@@ -114,6 +115,7 @@ class TestProduct(StaticLiveServerTestCase):
     def test_search_and_view_substitute_details(self):
         # Search for 'Nutella'
         self.browser.get(self.live_server_url)
+        print(self.live_server_url)
         wait = WebDriverWait(self.browser, 10)
         wait.until(
             EC.element_located_to_be_selected((By.NAME, "search-request"))
