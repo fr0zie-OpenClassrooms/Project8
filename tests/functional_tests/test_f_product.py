@@ -2,6 +2,8 @@ import pytest, time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
@@ -14,8 +16,8 @@ class TestProduct(StaticLiveServerTestCase):
     @pytest.mark.django_db
     def setUp(self):
         options = Options()
-        options.add_argument('--no-sandbox')
-        options.add_argument('--headless')
+        options.add_argument("--no-sandbox")
+        options.add_argument("--headless")
         service = Service(executable_path=ChromeDriverManager().install())
         self.browser = webdriver.Chrome(service=service, options=options)
 
@@ -88,9 +90,13 @@ class TestProduct(StaticLiveServerTestCase):
     def test_search_and_save_substitute(self):
         # Search for 'Nutella'
         self.browser.get(self.live_server_url)
-        search = self.browser.find_element(By.ID, "search")
-        search.send_keys("Nutella")
-        search.send_keys(Keys.RETURN)
+        wait = WebDriverWait(self.browser, 10)
+        wait.until(EC.element_to_be_clickable(By.NAME, "search-request")).send_keys(
+            "Nutella"
+        ).send_keys(Keys.RETURN)
+        # search = self.browser.find_element(By.NAME, "search-request")
+        # search.send_keys("Nutella")
+        # search.send_keys(Keys.RETURN)
 
         # Save substitute
         save_button = self.browser.find_element(By.CLASS_NAME, "btn-primary")
@@ -108,9 +114,13 @@ class TestProduct(StaticLiveServerTestCase):
     def test_search_and_view_substitute_details(self):
         # Search for 'Nutella'
         self.browser.get(self.live_server_url)
-        search = self.browser.find_element(By.ID, "search")
-        search.send_keys("Nutella")
-        search.send_keys(Keys.RETURN)
+        wait = WebDriverWait(self.browser, 10)
+        wait.until(EC.element_to_be_clickable(By.NAME, "search-request")).send_keys(
+            "Nutella"
+        ).send_keys(Keys.RETURN)
+        # search = self.browser.find_element(By.ID, "search")
+        # search.send_keys("Nutella")
+        # search.send_keys(Keys.RETURN)
 
         # View first substitute details
         substitute = self.browser.find_element(By.CLASS_NAME, "img")
