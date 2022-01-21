@@ -29,6 +29,7 @@ jobs:
         environment:
           POSTGRES_USER: root
           POSTGRES_DB: circle_test
+      - image: cimg/openjdk:17.0.1
       - image: selenium/standalone-chrome:3.11.0
 
     # Checkout the code as the first step. This is a dedicated CircleCI step.
