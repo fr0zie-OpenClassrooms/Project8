@@ -13,11 +13,11 @@ from product.models import Product, Category, Nutriscore
 class TestProduct(StaticLiveServerTestCase):
     @pytest.mark.django_db
     def setUp(self):
-        chrome_options = Options()
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--headless')
+        options = Options()
+        options.add_argument('--no-sandbox')
+        options.add_argument('--headless')
         service = Service(executable_path=ChromeDriverManager().install())
-        self.browser = webdriver.Chrome(service=service, chrome_options=chrome_options)
+        self.browser = webdriver.Chrome(service=service, options=options)
 
         # Create products
         Nutriscore.objects.create(nutriscore="b")
@@ -87,6 +87,7 @@ class TestProduct(StaticLiveServerTestCase):
 
     def test_search_and_save_substitute(self):
         # Search for 'Nutella'
+        self.browser.implicitly_wait(10)
         self.browser.get(self.live_server_url)
         search = self.browser.find_element(By.NAME, "search-request")
         search.send_keys("Nutella")
@@ -107,6 +108,7 @@ class TestProduct(StaticLiveServerTestCase):
 
     def test_search_and_view_substitute_details(self):
         # Search for 'Nutella'
+        self.browser.implicitly_wait(10)
         self.browser.get(self.live_server_url)
         search = self.browser.find_element(By.NAME, "search-request")
         search.send_keys("Nutella")
