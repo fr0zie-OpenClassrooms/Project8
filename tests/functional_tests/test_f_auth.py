@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.urls import reverse
@@ -8,7 +9,10 @@ from django.urls import reverse
 
 class TestAuthentification(StaticLiveServerTestCase):
     def test_authentification(self):
-        service = Service(executable_path=ChromeDriverManager().install())
+        chrome_options = Options()
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--headless")
+        service = Service(executable_path=ChromeDriverManager().install(), chrome_options=chrome_options)
         self.browser = webdriver.Chrome(service=service)
 
         # Register

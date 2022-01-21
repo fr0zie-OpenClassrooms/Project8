@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.urls import reverse
@@ -12,7 +13,10 @@ from product.models import Product, Category, Nutriscore
 class TestProduct(StaticLiveServerTestCase):
     @pytest.mark.django_db
     def setUp(self):
-        service = Service(executable_path=ChromeDriverManager().install())
+        chrome_options = Options()
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--headless')
+        service = Service(executable_path=ChromeDriverManager().install(), chrome_options=chrome_options)
         self.browser = webdriver.Chrome(service=service)
 
         # Create products
