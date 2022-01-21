@@ -7,8 +7,7 @@ from django.urls import reverse
 
 class TestAuthentification(StaticLiveServerTestCase):
     def test_authentification(self):
-        service = Service("tests/functional_tests/chromedriver")
-        self.browser = webdriver.Chrome(service=service)
+        self.browser = webdriver.Chrome()
 
         # Register
         self.browser.get(self.live_server_url + reverse("register"))

@@ -11,8 +11,7 @@ from product.models import Product, Category, Nutriscore
 class TestProduct(StaticLiveServerTestCase):
     @pytest.mark.django_db
     def setUp(self):
-        self.service = Service("tests/functional_tests/chromedriver")
-        self.browser = webdriver.Chrome(service=self.service)
+        self.browser = webdriver.Chrome()
 
         # Create products
         Nutriscore.objects.create(nutriscore="b")
