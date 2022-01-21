@@ -8,7 +8,9 @@ cffi==1.15.0
 charset-normalizer==2.0.6
 click==8.0.1
 colorama==0.4.4
+configparser==5.2.0
 coverage==6.1.2
+crayons==0.4.0
 cryptography==36.0.0
 dj-database-url==0.5.0
 Django==3.2.7
@@ -49,5 +51,6 @@ trio==0.19.0
 trio-websocket==0.9.2
 typing-extensions==3.10.0.2
 urllib3==1.26.7
+webdriver-manager==3.5.2
 whitenoise==5.3.0
 wsproto==1.0.0
