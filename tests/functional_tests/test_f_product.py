@@ -89,15 +89,10 @@ class TestProduct(StaticLiveServerTestCase):
 
     def test_search_and_save_substitute(self):
         # Search for 'Nutella'
-        self.browser.get(self.live_server_url)
-        print(self.live_server_url)
-        wait = WebDriverWait(self.browser, 10)
-        wait.until(
-            EC.element_located_to_be_selected((By.NAME, "search-request"))
-        ).send_keys("Nutella").send_keys(Keys.RETURN)
-        # search = self.browser.find_element(By.NAME, "search-request")
-        # search.send_keys("Nutella")
-        # search.send_keys(Keys.RETURN)
+        self.browser.get(self.live_server_url + reverse("home"))
+        search = self.browser.find_element(By.NAME, "search-request")
+        search.send_keys("Nutella")
+        search.send_keys(Keys.RETURN)
 
         # Save substitute
         save_button = self.browser.find_element(By.CLASS_NAME, "btn-primary")
@@ -114,15 +109,10 @@ class TestProduct(StaticLiveServerTestCase):
 
     def test_search_and_view_substitute_details(self):
         # Search for 'Nutella'
-        self.browser.get(self.live_server_url)
-        print(self.live_server_url)
-        wait = WebDriverWait(self.browser, 10)
-        wait.until(
-            EC.element_located_to_be_selected((By.NAME, "search-request"))
-        ).send_keys("Nutella").send_keys(Keys.RETURN)
-        # search = self.browser.find_element(By.ID, "search")
-        # search.send_keys("Nutella")
-        # search.send_keys(Keys.RETURN)
+        self.browser.get(self.live_server_url + reverse("home"))
+        search = self.browser.find_element(By.ID, "search")
+        search.send_keys("Nutella")
+        search.send_keys(Keys.RETURN)
 
         # View first substitute details
         substitute = self.browser.find_element(By.CLASS_NAME, "img")
