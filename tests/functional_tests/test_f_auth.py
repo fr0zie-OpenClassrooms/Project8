@@ -12,8 +12,8 @@ class TestAuthentification(StaticLiveServerTestCase):
         chrome_options = Options()
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--headless")
-        service = Service(executable_path=ChromeDriverManager().install(), chrome_options=chrome_options)
-        self.browser = webdriver.Chrome(service=service)
+        service = Service(executable_path=ChromeDriverManager().install())
+        self.browser = webdriver.Chrome(service=service, chrome_options=chrome_options)
 
         # Register
         self.browser.get(self.live_server_url + reverse("register"))

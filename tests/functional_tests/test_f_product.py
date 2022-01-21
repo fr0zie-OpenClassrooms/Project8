@@ -16,8 +16,8 @@ class TestProduct(StaticLiveServerTestCase):
         chrome_options = Options()
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--headless')
-        service = Service(executable_path=ChromeDriverManager().install(), chrome_options=chrome_options)
-        self.browser = webdriver.Chrome(service=service)
+        service = Service(executable_path=ChromeDriverManager().install())
+        self.browser = webdriver.Chrome(service=service, chrome_options=chrome_options)
 
         # Create products
         Nutriscore.objects.create(nutriscore="b")
