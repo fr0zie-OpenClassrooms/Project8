@@ -1,13 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.urls import reverse
 
 
 class TestAuthentification(StaticLiveServerTestCase):
     def test_authentification(self):
-        self.browser = webdriver.Chrome()
+        service = Service(executable_path=ChromeDriverManager().install())
+        self.browser = webdriver.Chrome(service=service)
 
         # Register
         self.browser.get(self.live_server_url + reverse("register"))
