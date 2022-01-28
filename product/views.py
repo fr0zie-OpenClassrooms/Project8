@@ -17,7 +17,6 @@ def search(request):
         product = Product.get_product(product_name)
 
         if product:
-            user = request.user
             substitutes = Product.find_substitute(product)
             paginator = Paginator(substitutes, 6)
             page = request.GET.get("page")
@@ -31,6 +30,7 @@ def search(request):
 
             for substitute in substitutes_in_page:
                 try:
+                    user = request.user
                     Substitute.objects.get(user=user, substitute=substitute)
                     substitute.saved = True
                 except Substitute.DoesNotExist:
