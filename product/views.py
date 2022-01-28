@@ -28,13 +28,14 @@ def search(request):
             except EmptyPage:
                 substitutes_in_page = paginator.page(paginator.num_pages)
 
-            for substitute in substitutes_in_page:
-                try:
-                    user = request.user
-                    Substitute.objects.get(user=user, substitute=substitute)
-                    substitute.saved = True
-                except Substitute.DoesNotExist:
-                    pass
+            if request.user.is_authenticated:
+                for substitute in substitutes_in_page:
+                    try:
+                        user = request.user
+                        Substitute.objects.get(user=user, substitute=substitute)
+                        substitute.saved = True
+                    except Substitute.DoesNotExist:
+                        pass
 
             context = {
                 "product": product,
