@@ -31,5 +31,28 @@
             </div>
         </div>
     </div>
+
+    <div class="card-body">
+        <h3>Donnez-nous votre avis !</h3>
+        <form method="post" action="{% url 'details' product.name %}">
+            {% csrf_token %}
+            <div class="input-group mb-3 justify-content-center">
+                {{form.body}}
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+
+    {% for comment in comments %}
+    <div class="comments" style="padding: 10px;">
+        <p class="font-weight-bold">
+            {{ comment.user.username }}
+            <span class=" text-muted font-weight-normal">
+                {{ comment.created_on }}
+            </span>
+        </p>
+        {{ comment.body | linebreaks }}
+    </div>
+    {% endfor %}
 </section>
 {% endblock %}

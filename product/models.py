@@ -79,3 +79,15 @@ class Substitute(models.Model):
     substitute = models.ForeignKey(
         Product, on_delete=CASCADE, related_name="substitute"
     )
+
+
+class Comment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="comments"
+    )
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_on"]

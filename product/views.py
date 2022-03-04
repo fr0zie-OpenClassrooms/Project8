@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-from .models import Product, Substitute
+from .models import Product, Substitute, Comment
+from .forms import CommentForm
 
 
 def search(request):
@@ -49,11 +50,24 @@ def search(request):
 def details(request, product_name=None):
     try:
         product = Product.objects.get(name=product_name)
+        comments = product.comments.all()
+
+        if request.method == "POST":
+            form = CommentForm(data=request.POST)
+            if form.is_valid():
+                comment = form.save(commit=False)
+                comment.user = request.user
+                comment.product = product
+                comment.save()
+        else:
+            form = CommentForm()
     except Product.DoesNotExist:
         return render(request, "home/404.html", status=404)
     else:
         context = {
             "product": product,
+            "comments": comments,
+            "form": form,
             "nutriscore_img": f"nutriscore-{product.nutriscore.nutriscore}.png",
         }
 
