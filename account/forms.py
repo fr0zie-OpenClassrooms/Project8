@@ -1,5 +1,10 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import (
+    UserCreationForm,
+    PasswordResetForm,
+    PasswordChangeForm,
+    SetPasswordForm,
+)
 
 from .models import User
 
@@ -30,3 +35,13 @@ class RegistrationForm(UserCreationForm):
             ),
             "email": forms.TextInput(attrs={"placeholder": "Email", "id": "email"}),
         }
+
+
+class PasswordResetForm(PasswordResetForm):
+    email = forms.CharField(
+        max_length=32,
+        widget=forms.TextInput(attrs={"placeholder": "Email", "id": "email"}),
+    )
+
+    def send_mail(*args, **kwargs):
+        super(PasswordResetForm).send_mail(*args, **kwargs)
