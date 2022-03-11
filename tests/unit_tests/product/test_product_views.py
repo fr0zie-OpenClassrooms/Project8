@@ -23,17 +23,13 @@ class TestProductViews:
     @pytest.mark.django_db
     def test_product_found(self):
         client = Client()
-        response = client.get(
-            reverse("search"), {"product": "Test Product"}, format="text/html"
-        )
+        response = client.get(reverse("search"), {"product": "Test Product"})
         assert response.status_code == 200
 
     @pytest.mark.django_db
     def test_product_not_found(self):
         client = Client()
-        response = client.get(
-            reverse("search"), {"product": "Random Product"}, format="text/html"
-        )
+        response = client.get(reverse("search"), {"product": "Random Product"})
         assert response.status_code == 404
 
     @pytest.mark.django_db

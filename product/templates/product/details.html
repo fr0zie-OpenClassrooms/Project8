@@ -32,26 +32,28 @@
         </div>
     </div>
 
+    {% if request.user.is_authenticated %}
     <div class="card-body">
         <h3>Donnez-nous votre avis !</h3>
         <form method="post" action="{% url 'details' product.name %}">
             {% csrf_token %}
             <div class="input-group mb-3 justify-content-center">
-                {{form.body}}
+                {{form.comment}}
             </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button id="submit" type="submit" class="btn btn-primary">Envoyer</button>
         </form>
     </div>
+    {% endif %}
 
     {% for comment in comments %}
     <div class="comments" style="padding: 10px;">
         <p class="font-weight-bold">
             {{ comment.user.username }}
-            <span class=" text-muted font-weight-normal">
+            <span class="text-muted font-weight-normal">
                 {{ comment.created_on }}
             </span>
         </p>
-        {{ comment.body | linebreaks }}
+        <p id="comment">{{ comment.comment | linebreaks }}</p>
     </div>
     {% endfor %}
 </section>

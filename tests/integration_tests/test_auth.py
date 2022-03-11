@@ -13,7 +13,7 @@ def test_login_route():
         "password1": "t8VhtmOUpYJ39Tb0",
         "password2": "t8VhtmOUpYJ39Tb0",
     }
-    temp_user = client.post(reverse("register"), credentials)
+    client.post(reverse("register"), credentials)
     response = client.post(
         reverse("login"),
         {"email": "testuser@purbeurre.fr", "password": "t8VhtmOUpYJ39Tb0"},

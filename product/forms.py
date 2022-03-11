@@ -6,4 +6,9 @@ from .models import Comment
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ("body",)
+        fields = ("comment",)
+        widgets = {
+            "comment": forms.Textarea(
+                attrs={"placeholder": "Ecrivez votre avis...", "id": "comment"}
+            ),
+        }

@@ -67,7 +67,6 @@ def reset_password(request):
         associated_users = User.objects.filter(Q(email=email))
         if associated_users.exists():
             for user in associated_users:
-                print(user.email)
                 subject = "Demande de réinitialisation de mot de passe"
                 email_template_name = "account/reset_email.txt"
                 c = {
